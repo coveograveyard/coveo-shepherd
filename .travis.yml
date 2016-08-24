@@ -1,0 +1,25 @@
+language: node_js
+cache:
+  directories:
+  - node_modules
+notifications:
+  email:
+    on_success: change
+    on_failure: always
+node_js:
+  - '6'
+branches:
+  only:
+  - master
+  - /v(\d+.){2}\d+/
+env:
+  global:
+    - COMMIT_AUTHOR_EMAIL: 'sandbox_SF@coveo.com'
+deploy:
+  provider: npm
+  email: 'sandbox_SF@coveo.com'
+  api_key:
+    secure: rJJ1XIC3iDbGz15c7e8X44vdQKBIhEKOiEqS2PdzolNFm/7S4mOYaTqCeLA3JH5NQ4YCwcDqUA2D/9krdDE1vZePYNz3114345n9gYblrOptU3ksJLc+fTfQU+L5y/x/Jb1LqgqUgYGoPkb5FyXgAYRNbtvBXIOA5S3EQXyqOcsuWlzoiKgszjYlGiiyTFoLKBGGdVehqm0Sj7S8boEcaYxW4vBQB5pZewjxo7j+2zDQ5wOWloxOVcpZ+Zhb7EwH6uRdXU+1pbdxiPBNaXJJd8r8DwNqwoAn2MAT1vSmgfnTog2jhoJIU9RV0gPkifnnW1+gI32wLuWasmhV84fvvwIMhsGlIq+9X+x99l/ayObKaMwgxBo2rIzo33Frtdw7XTyIQfdU7yH8WiY9FtBrC1Ds3tGRBXnvmolqx75ZGz3WKcUg6lk86NdNdk2loDaa0y3kzlzcTxnCaHnvsoECagpNsf5GXo6n8rJzHvZI0ZN0bZGKhx8Up+pFzEnZm4NVkkfpO/fnIYmPWtSigrG8qxM9K+aurVibFKViHmr+A+ET39idUfgWpbe0KCqqXDKmsW6qQjzQG44ru4/+72u54yo/qXwtdFx17/nZVlON65+6DZiAH2bzP08WtZ6s1PMbxFFQ0uLKW1/6dTdVQ0vP+3lNkRg12RR0pfx8baPKLbg=
+  on:
+    tags: true
+    repo: coveo/coveo-shepherd
