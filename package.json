@@ -15,7 +15,8 @@
   "main": "./dist/shepherd-theme-coveo.min.css",
   "scripts": {
     "test": "gulp sass",
-    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0",
+    "commit": "git cz"
   },
   "repository": {
     "type": "git",
