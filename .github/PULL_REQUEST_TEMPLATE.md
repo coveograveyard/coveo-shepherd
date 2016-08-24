@@ -8,7 +8,7 @@ Here's a checklist you might find useful.
 [ ] You've successfully run `gulp test` locally
 
 Refer to CONTRIBUTING.MD for more details.
-  https://github.com/coveo/coveo-shepherd/.github/CONTRIBUTING.md
+  https://github.com/coveo/coveo-shepherd/blob/master/.github/CONTRIBUTING.md
 -->
 
 **Fixes issue:** #
