@@ -29,7 +29,7 @@ Insert the css in your HTML header
 
 ```html
   ...
-  <link rel="stylesheet" href="../path_to/../shepherd-theme-coveo.css">
+  <link rel="stylesheet" href="../path_to/../shepherd-theme-coveo.min.css">
   ...
 ```
 
