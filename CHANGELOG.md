@@ -1,3 +1,8 @@
+<a name="0.0.2"></a>
+## [0.0.2](https://github.com/coveo/coveo-shepherd/compare/v0.0.1...v0.0.2) (2016-08-24)
+
+
+
 <a name="0.0.1"></a>
 ## [0.0.1](https://github.com/coveo/coveo-shepherd/compare/40c8192...v0.0.1) (2016-08-24)
 
