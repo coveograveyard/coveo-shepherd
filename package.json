@@ -1,0 +1,55 @@
+{
+  "name": "coveo-webtour",
+  "version": "0.0.1",
+  "description": "a shepherd theme with Coveo Vapor",
+  "keywords": [
+    "shepherd",
+    "tether",
+    "tether-shepherd",
+    "coveo",
+    "css",
+    "sass",
+    "theme",
+    "skin"
+  ],
+  "main": "./dist/shepherd-theme-coveo.min.css",
+  "scripts": {
+    "test": "gulp sass",
+    "changelog": "conventional-changelog -p angular -i CHANGELOG.md -s -r 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coveo/coveo-shepherd.git"
+  },
+  "bugs": {
+    "url": "https://github.com/coveo/coveo-shepherd/issues"
+  },
+  "homepage": "https://github.com/coveo/coveo-shepherd#readme",
+  "author": "Coveo",
+  "license": "MIT",
+  "devDependencies": {
+    "autoprefixer": "^6.4.0",
+    "browser-sync": "^2.14.0",
+    "coveo-styleguide": "^1.4.21",
+    "cssnano": "^3.7.4",
+    "cz-conventional-changelog": "^1.2.0",
+    "gulp": "^3.9.1",
+    "gulp-inject": "^4.1.0",
+    "gulp-postcss": "^6.1.1",
+    "gulp-pug": "^3.0.4",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.3.2",
+    "jquery": "^2.2.4",
+    "postcss": "^5.1.2",
+    "prismjs": "^1.5.1",
+    "pug": "^2.0.0-beta5",
+    "tether-shepherd": "^1.8.0",
+    "underscore": "^1.8.3"
+  },
+  "dependencies": {},
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
