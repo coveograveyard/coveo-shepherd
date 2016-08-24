@@ -37,13 +37,12 @@ gulp.task('sass', () => {
     .src('./src/sass/coveo.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(rename('shepherd-theme-coveo.css'))
-    .pipe(gulp.dest('./dist/vendor'))
-    .pipe(browserSync.stream())
     .pipe(postcss(processors))
     .pipe(rename({
       suffix: '.min'
     }))
-    .pipe(gulp.dest('./dist/'));
+    .pipe(gulp.dest('./dist/'))
+    .pipe(browserSync.stream());
 });
 
 gulp.task('copy', () => {
@@ -65,8 +64,10 @@ gulp.task('copy', () => {
 
 gulp.task('inject', ['pug'], () => {
   const sources = [
+    'dist/vendor/jquery.js',
+    'dist/vendor/tether.js',
     'dist/vendor/**/*.js',
-    'dist/vendor/**/*.css*'
+    'dist/**/*.css*'
   ];
   const target = './dist/index.html';
 
@@ -83,10 +84,9 @@ gulp.task('serve', () => {
     server: './dist'
   });
 
-  gulp.watch('./src/view/index.pug', ['inject']).on('change', browserSync.Reload);
+  gulp.watch('./src/view/index.pug', ['inject']).on('change', browserSync.reload);
   gulp.watch('./src/js/coveo.js', ['js']);
   gulp.watch('./src/sass/coveo.scss', ['sass']);
-  // gulp.watch('./dist/index.html').on('change', browserSync.reload);
 });
 
 gulp.task('default', ['copy', 'inject', 'js', 'serve'])
