@@ -8,8 +8,6 @@ Coveo's shepherd theme
 [![Commitizen friendly](https://img.shields.io/badge/commitizen-friendly-brightgreen.svg)](http://commitizen.github.io/cz-cli/)
 [![GitHub release](https://img.shields.io/github/release/coveo/coveo-shepherd.svg)](https://github.com/coveo/coveo-shepherd/releases/)
 [![version](https://img.shields.io/npm/v/coveo-shepherd.svg)](https://www.npmjs.org/package/coveo-shepherd)
-[![npm](https://img.shields.io/npm/dt/coveo-shepherd.svg)](https://www.npmjs.org/package/coveo-shepherd)
-[![npm](https://img.shields.io/npm/dm/coveo-shepherd.svg)](https://www.npmjs.org/package/coveo-shepherd)
 [![license](https://img.shields.io/github/license/coveo/coveo-shepherd.svg)](https://github.com/coveo/coveo-shepherd/blob/master/LICENSE)
 
 
