@@ -46,10 +46,24 @@ Initialize tether-shepherd with the coveo theme
   ...
 ```
 
-### Shepherd
+## Shepherd
 
 Shepherd is a nice javascript plugin to help guide your users through a tour of your app.
 Take a look at their [API](http://github.hubspot.com/shepherd/).
+
+## Screenshots
+
+- Example with a large content
+
+![large](https://raw.github.com/coveo/coveo-shepherd/screenshots/images/large.png)
+
+- Example with a medium content
+
+![medium](https://raw.github.com/coveo/coveo-shepherd/screenshots/images/medium.png)
+
+- Example with a small content and no title
+
+![small](https://raw.github.com/coveo/coveo-shepherd/screenshots/images/small.png)
 
 [![forthebadge](http://forthebadge.com/images/badges/built-with-love.svg)](http://forthebadge.com)
 [![forthebadge](http://forthebadge.com/images/badges/built-by-developers.svg)](http://forthebadge.com)
