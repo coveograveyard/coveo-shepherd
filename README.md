@@ -38,11 +38,26 @@ Initialize tether-shepherd with the coveo theme
 ```js
   var tour = new Shepherd.Tour({
     defaults: {
-      classes: 'shepherd-theme-coveo',
-      ...
+      classes: 'shepherd-theme-coveo', <-- the theme
+      scrollTo: true,
+      showCancelLink: true
     }
   });
+  ...
 
+  tour.addStep('Testing the next', {
+    title: 'Example Shepherd',
+    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut laoreet quam et ante aliquam, et sagittis ipsum sagittis. Nulla sed luctus arcu.<br/><br/>Donec tincidunt elementum euismod. Praesent pulvinar aliquam dui, sit amet tempus est convallis vel. Quisque consectetur ullamcorper tincidunt. Integer enim urna, facilisis vel imperdiet vitae, maximus quis nisi.",
+    attachTo: 'code.language-css bottom',
+    buttons: [{
+      text: 'Prev',
+      action: tour.back
+    }, {
+      classes: 'shepherd-button-primary', <-- primary button mod
+      text: 'Next',
+      action: tour.next
+    }]
+  });
   ...
 ```
 
